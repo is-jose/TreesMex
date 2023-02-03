@@ -1,0 +1,44 @@
+/*  ----------- General  ----------- */
+:root{
+
+}
+
+* {
+  
+}
+
+
+html {
+  /* scroll suave */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+/*  ----------- Top Nav  ----------- */
+.nav {
+}
+
+/*  ----------- Introduction  ----------- */
+.intro {
+
+}
+
+/*  ----------- Trees  ----------- */
+.tree {
+}
+
+/*  ----------- Prices  ----------- */
+.price {
+
+}
+
+/*  ----------- Importance  ----------- */
+.importance {
+
+}
+
+
