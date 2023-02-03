@@ -1,12 +1,15 @@
 /*  ----------- General  ----------- */
-:root{
-
+:root {
+  --colorFondo: rgb(58, 157, 58);
+  --colorNavBar: rgb(43, 41, 41);
 }
 
 * {
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--colorFondo);
 }
-
 
 html {
   /* scroll suave */
@@ -14,31 +17,77 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 /*  ----------- Top Nav  ----------- */
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  background-color: var(--colorNavBar);
+  position: fixed;
+  width: 100%;
+}
+.nav__h2 {
+  background-color: var(--colorNavBar);
+  color: white;
+}
+.nav__ul {
+  /* cursor: pointer; */
+  list-style: none;
+  background-color: var(--colorNavBar);
+}
+.nav__li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: var(--colorNavBar);
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  background-color: var(--colorNavBar);
+}
+.nav__link:hover {
+  transition: all 0.3s ease 0s;
+  color: rgb(84, 155, 84);
+}
+.nav__button {
+  border: none;
+  background-color: var(--colorFondo);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.nav__button:hover {
+  transition: 0.3s ease 0s;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 /*  ----------- Introduction  ----------- */
 .intro {
-
+}
+.intro__h2 {
+  padding: 10vh 0vh 0vh 0vh;
 }
 
 /*  ----------- Trees  ----------- */
 .tree {
 }
+.tree__h2 {
+  padding: 12vh 0vh 0vh 0vh;
+}
 
 /*  ----------- Prices  ----------- */
 .price {
-
+}
+.price__h2 {
+  padding: 12vh 0vh 0vh 0vh;
 }
 
 /*  ----------- Importance  ----------- */
 .importance {
-
 }
-
-
