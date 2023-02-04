@@ -49,6 +49,9 @@ body {
   color: white;
   background-color: var(--colorNavBar);
 }
+.nav__link1 {
+  color:rgb(58, 157, 58)
+}
 .nav__link:hover {
   transition: all 0.3s ease 0s;
   color: rgb(84, 155, 84);
@@ -66,6 +69,41 @@ body {
   transform: scale(1.3);
   cursor: pointer;
 }
+
+/* ----------- Galeria -------------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Auto-fill: Genera columnas automaticamente */
+  /* min-max: 250px como minimo se va a adaptar y como maximo 1fr que es decir hasta que de el maximo la pantalla */
+  grid-auto-rows: minmax(200px, 1fr);
+  /* Ajusta el tamaño de las filas 200px es lo minimo y 1fr lo maximo */
+  grid-auto-flow: dense;
+  /* Acomoda todos los elementos del grid para no dejar espacios */
+  gap: 5px;
+}
+.galeria__item {
+
+}
+.galeria__img {
+  /* Para que la imagen se adapte al espacio del grid */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) { /* Lo que esta dentro solo se aplicara despues de los 600px */
+ .wide {
+  grid-column: span 2; /* Las que tengan esta clase tomaran 2 espacios a lo ancho */
+} 
+.exwide{
+  grid-column: span 4;
+}
+.tall {
+  grid-row: span 2; /* Las que tengan esta clase tomaran 2 espacios a lo largo */
+}
+}
+
 
 /*  ----------- Introduction  ----------- */
 .intro {
