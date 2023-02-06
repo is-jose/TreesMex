@@ -28,6 +28,7 @@ body {
   padding: 18px 5%;
   background-color: var(--colorNavBar);
   position: fixed;
+  z-index: 99; /* Modifica el orden de apilamiento, asi que la navbar siempre estara por encima de lo demás */
   width: 100%;
 }
 .nav__h2 {
@@ -83,8 +84,7 @@ body {
     "img10 img10 img9 img8 img8"
     "img10 img10 img4 img6 img7";
   gap: 0.2em;
-  padding: 50px 0px 0px 0px;
-  
+  padding: 35px 0px 0px 0px;
 }
 .galeria__item {
   position: relative;
@@ -105,15 +105,14 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item1:hover::before{
+.item1:hover::before {
   transform: scale(1);
 }
 
 .item2::before {
-  content: "Cenotes Cancun, MX";
+  content: "Cenotes, Quintana Roo";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,14 +125,13 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item2:hover::before{
+.item2:hover::before {
   transform: scale(1);
 }
 .item3::before {
-  content: "Cenotes Tulum, MX";
+  content: "Cenotes, Quintana Roo";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,14 +144,18 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item3:hover::before{
+.item3:hover::before {
   transform: scale(1);
 }
 .item4::before {
-  content: "hola";
+  content: "Chinampas, Mexico City";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -161,14 +163,18 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item4:hover::before{
+.item4:hover::before {
   transform: scale(1);
 }
 .item5::before {
-  content: "hola";
+  content: "Basaltic Prisms, Hidalgo";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -176,16 +182,19 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item5:hover::before{
+.item5:hover::before {
   transform: scale(1);
 }
 
-
 .item6::before {
-  content: "hola";
+  content: "Sumidero Canyon, Chiapas";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -193,15 +202,19 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item6:hover::before{
+.item6:hover::before {
   transform: scale(1);
 }
 
 .item7::before {
-  content: "hola";
+  content: "Guayabitos, Nayarit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -209,15 +222,19 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item7:hover::before{
+.item7:hover::before {
   transform: scale(1);
 }
 
 .item8::before {
-  content: "hola";
+  content: "Copper Canyon, Chihuahua";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -225,14 +242,18 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item8:hover::before{
+.item8:hover::before {
   transform: scale(1);
 }
 .item9::before {
-  content: "hola";
+  content: "Puerto Vallarta, Jalisco";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -240,16 +261,19 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item9:hover::before{
+.item9:hover::before {
   transform: scale(1);
-
 }
 
 .item10::before {
-  content: "hola";
+  content: "The Comalcalco, Tabasco";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  font-weight: bold;
   position: absolute;
   top: 0;
   left: 0;
@@ -257,10 +281,9 @@ body {
   right: 0;
   background-color: rgba(58, 157, 58, 0.6);
   transform: scale(0);
-  transition: transform .4s;
- 
+  transition: transform 0.4s;
 }
-.item10:hover::before{
+.item10:hover::before {
   transform: scale(1);
 }
 
@@ -295,26 +318,29 @@ body {
   grid-area: img10;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .galeria__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    padding: 85px 0px 0px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img2"
+      "img4 img4"
+      "img4 img4"
+      "img5 img6"
+      "img7 img8"
+      "img7 img8"
+      "img9 img10";
+  }
+  .galeria__item {
+    font-size: 0.8rem;
+  }
 }
 
 /*  ----------- Introduction  ----------- */
