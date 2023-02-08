@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 5%;
+  padding: 1rem 1.5rem;
   background-color: var(--colorNavBar);
   position: fixed;
   z-index: 99; /* Modifica el orden de apilamiento, asi que la navbar siempre estara por encima de lo demás */
@@ -39,11 +39,15 @@ body {
   /* cursor: pointer; */
   list-style: none;
   background-color: var(--colorNavBar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav__li {
   display: inline-block;
   padding: 0px 20px;
   background-color: var(--colorNavBar);
+  margin-left: 5rem;
 }
 .nav__link {
   text-decoration: none;
@@ -69,6 +73,53 @@ body {
   transition: 0.3s ease 0s;
   transform: scale(1.3);
   cursor: pointer;
+}
+.hamburger {
+  display: none;
+  background-color: var(--colorNavBar);
+}
+.bar {
+  display: block; /* Hace que se apilen en bloque y creen el menu sandwich */
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out; /* Ayuda a hacer la transicion de menu sandwich a "x" */
+  background-color: var(--colorFondo);
+}
+@media only screen and (max-width: 768px) {
+  .nav__ul {
+    position: fixed; /* Hace que los elementos dentro de nav__ul se metan en el menu de sandwich */
+    left: -100%; /* Manda los elementos completamente hacia la izquierda */
+    top: 5rem; /* Le da un top para que cuando los elementos aparezcan no se encimen con la top nav-bar */
+    flex-direction: column; /* Apila los elementos en columna */
+    width: 100%; /* Le da todo el ancho de la pantalla a la caja los elementos */
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s; /* Le da la transicion a la caja con los elementos en este caso se tardaria 0.3s aparecer */
+  }
+  .nav__ul.active {
+    left: 0; /* Aparece los elementos */
+  }
+  .nav__li {
+    margin: 2rem 0; /* Le da separacion entre los elementos del nav__li */
+  }
+  .hamburger {
+    display: block; /* Hace que ahora si aparezca el menu de sandwich */
+    cursor: pointer;
+  }
+
+  /* Estas 3 lineas hacen que el menu de sandwich se convierta en una "x" cuando se le da click */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 /* ----------- Gallery -------------- */
@@ -326,7 +377,7 @@ body {
 
 @media (max-width: 768px) {
   .galeria {
-    padding: 85px 0px 0px 0px;
+    padding: 35px 0px 0px 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "img1 img2"
