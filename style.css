@@ -396,10 +396,18 @@ body {
 
 /*  ----------- Introduction  ----------- */
 .intro {
+  height: 600px;
 }
 .intro__h2 {
-  padding: 10vh 0vh 0vh 0vh;
+  padding: 15vh 0vh 0vh 0vh;
 }
+.intro__img {
+  width: 300px;
+  position: relative;
+  left: 130vh;
+  bottom: 40vh;
+}
+
 
 /*  ----------- Trees  ----------- */
 .tree {
