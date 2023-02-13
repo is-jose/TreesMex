@@ -558,12 +558,16 @@ tr:hover td {
 /*  ----------- Importance  ----------- */
 .importance {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-right: 30px;
 }
+
 
 .img__importance {
   width: 300px;
-  position: relative;
+ /*  position: relative;
   left: 120vh;
-  bottom: 25vh
-}
+  bottom: 25vh; */
+} 
+
