@@ -395,7 +395,7 @@ body {
 }
 
 /*  ----------- Introduction  ----------- */
-.intro {
+/* .intro {
   height: 600px;
 }
 .intro__h2 {
@@ -406,6 +406,31 @@ body {
   position: relative;
   left: 130vh;
   bottom: 40vh;
+}
+ */
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-right: 30px;
+}
+
+.intro__h2 {
+  padding: 10vh 0vh 0vh 0vh;
+  color: #E29E22;
+  text-shadow: 2px 2px 1px black;
+  text-transform: uppercase;
+}
+
+
+.intro__img {
+  width: 300px;
+  margin-right: 10vh;
+  margin-top: 5vh;
+ /*  position: relative;
+  left: 120vh;
+  bottom: 25vh; */
 }
 
 /*  ----------- Trees  ----------- */
@@ -508,6 +533,8 @@ body {
   border-radius: 30px;
   background-color: initial;
 }
+
+
 /*  ----------- Prices  ----------- */
 .price {
   margin: 40px 40px 18% 20%;
@@ -553,6 +580,14 @@ tr:hover td {
   background-color: #b65c11;
   color: black;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .price {
+    width: 400px;
+  }
+
+
 }
 
 /*  ----------- Importance  ----------- */
