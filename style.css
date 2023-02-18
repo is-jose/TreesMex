@@ -435,7 +435,9 @@ body {
 
 /*  ----------- Trees  ----------- */
 .tree__h2 {
-  padding: 12vh 0vh 5vh 0vh;
+  padding: 12vh 0vh 5vh 0vh; color: #E29E22;
+  text-shadow: 2px 2px 1px black;
+  text-transform: uppercase;
 }
 
 /* Para el cactus */
@@ -550,7 +552,10 @@ body {
   border: 5px whitesmoke solid;
 }
 .price__h2 {
-  padding: 12vh 0vh 0vh 0vh;
+  padding: 12vh 0vh 0vh 0vh; 
+  color: #E29E22;
+  text-shadow: 2px 2px 1px black;
+  text-transform: uppercase;
 }
 th,
 td {
@@ -598,6 +603,11 @@ tr:hover td {
   margin-right: 30px;
 }
 
+.importance__h2 {
+  color: #E29E22;
+  text-shadow: 2px 2px 1px black;
+  text-transform: uppercase;
+}
 
 .img__importance {
   width: 300px;
